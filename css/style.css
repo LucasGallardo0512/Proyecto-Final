@@ -16,7 +16,6 @@ body {
 /* Header Mobile */
 
 header {
-    width: 100vw;
     background-color: #aaa;
     font-size: 1.4em;
     box-shadow: 0 0 20px #444;
@@ -30,7 +29,7 @@ ul {
     flex-flow: column;
 }
 
-/* Header Tablets */
+/* Header Tablets/Desktop */
 
 @media screen and (min-width: 600px){
     header {
@@ -40,14 +39,6 @@ ul {
     ul {
         flex-flow: row;
         justify-content: space-evenly;
-    }
-}
-
-/* Header Desktop */
-
-@media screen and (min-width: 900px){
-    header {
-    width: 98.8vw;
     }
 }
 
@@ -82,6 +73,66 @@ a {
 li:hover {
     background-color: #888;
     box-shadow: 0 0 5px #444;
+}
+
+/* Footer / Contact Form */
+
+footer {
+    background: linear-gradient(#aaa,#444);
+    margin: 0;
+    padding: 25px 50px;
+    box-shadow: 0 0 20px #444;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #999;
+    box-shadow: 0 0 20px #666;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+input, textarea {
+    color: #222;
+    box-sizing: border-box;
+    padding: 3px;
+    font-family: sans-serif;
+    background-color: #bbb;
+    border: #666 solid 1px;
+}
+
+.input-name {
+    margin-right: 10px;
+}
+
+
+::placeholder {
+    color: #777;
+}
+
+.form-textarea {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    margin-left: 5px;
+    min-width: 60%;
+    max-width: 60%;
+    resize: none;
+}
+
+.submit {
+    background-color: #ddd;
 }
 
 /* Home Main Content Mobile */
@@ -155,67 +206,6 @@ h1 {
         margin-top: 0;
     }
 }
-
-/* Contact Form / Footer */
-
-footer {
-    background: linear-gradient(#aaa,#444);
-    margin: 0;
-    padding: 25px 50px;
-    box-shadow: 0 0 20px #444;
-}
-
-h2 {
-    margin: 0;
-    text-align: center;
-}
-
-form {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #999;
-    box-shadow: 0 0 20px #666;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}
-
-input, textarea {
-    color: #222;
-    box-sizing: border-box;
-    padding: 3px;
-    font-family: sans-serif;
-    background-color: #bbb;
-    border: #666 solid 1px;
-}
-
-.input-name {
-    margin-right: 10px;
-}
-
-
-::placeholder {
-    color: #777;
-}
-
-.form-textarea {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-}
-
-textarea {
-    margin-left: 5px;
-    min-width: 60%;
-    max-width: 60%;
-    resize: none;
-}
-
-.submit {
-    background-color: #ddd;
-}
-
 
 /* Project Articles Mobile */
 
