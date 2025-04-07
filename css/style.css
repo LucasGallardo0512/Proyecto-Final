@@ -7,35 +7,82 @@ body {
     justify-content: space-between;
 }
 
-/* Header */
+/* Header Mobile */
 
 header {
-    width: 100%;
+    width: 100vw;
     background-color: #aaa;
     font-size: 1.5em;
     box-shadow: 0 0 20px #444;
-    position: fixed;
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 10px;
-    display: flex;
+    display: flex wrap;
     justify-content: space-evenly;
 }
 
+/* Header Tablets */
+
+@media screen and (min-width: 600px){
+    header {
+        width: 100vw;
+        background-color: #aaa;
+        font-size: 1.5em;
+        box-shadow: 0 0 20px #444;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* Header Desktop */
+
+@media screen and (min-width: 900px){
+    header {
+    width: 98.8vw;
+    background-color: #aaa;
+    font-size: 1.5em;
+    box-shadow: 0 0 20px #444;
+    }
+
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+}
+
+/* Other Styles */
+
 li {
+    box-sizing: content-box;
     border-radius: 8px;
     transition-property: background-color,box-shadow;
     transition-duration: 0.2s;
     text-wrap: nowrap;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: #000;
-    padding: 4px 30px;
+    padding: 4px 125px;
+}
+
+@media screen and (min-width: 600px) {
+a {
+    padding: 4px 20px;
+    }
 }
 
 .item-selected {
@@ -48,42 +95,111 @@ li:hover {
     box-shadow: 0 0 5px #444;
 }
 
-/* Home Main Content */
+/* Home Main Content Mobile */
 
 .home-main {
     display: flex;
+    flex-flow: column;
     justify-content: center;
-    margin: 110px 0 60px 0;
+    align-items: center;
+    margin: 30px 0 50px 0;
 }
 
 .presentation {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+/* Home Main Content Tablets */
+
+@media screen and (min-width: 600px) {
+    .home-main {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    
+    .presentation {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: start;
+        text-align: start;
+    }
+}
+
+/* Home Main Content Desktop */
+
+@media screen and (min-width: 900px) {
+    .home-main {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    
+    .presentation {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+}
+
+/* Presentation Mobile */
 
 h1 {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 .subtitle {
-    text-align: start;
-    margin: 0 0 12px 0;
+    margin-bottom: 0.4em;
     font-size: 1.2em;
 }
 
-
 .description {
-    width: 400px;
+    width: 300px;
     margin: 0;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .retrato {
-    border-radius: 150px;
+    width: 300px;
+    border-radius: 195px;
     box-shadow: 0 0 15px #555;
-    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* Presentation Tablets/desktop */
+
+@media screen and (min-width: 600px) {
+    h1 {
+        margin: 0;
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        text-align: start;
+        margin-bottom: 0.4em;
+        font-size: 1.2em;
+    }
+    
+    .description {
+        width: 400px;
+        margin: 0;
+        font-size: 0.9em;
+    }
+    
+    .retrato {
+        border-radius: 150px;
+        box-shadow: 0 0 15px #555;
+        margin-left: 20px;
+        margin-top: 0;
+    }
 }
 
 /* Contact Form / Footer */
@@ -147,14 +263,14 @@ textarea {
 }
 
 
-/* Project Section */
+/* Project Articles */
 
 .main-projects {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 80px 0 30px 0;
+    padding: 30px 0 30px 0;
 }
 
 .project {
@@ -165,8 +281,11 @@ textarea {
     flex-flow: column;
     text-align: center;
     box-shadow: 0 0 15px #444;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.project-img {
+    border-radius: 10px 10px 0 0;
 }
 
 .project-description {
@@ -316,7 +435,10 @@ textarea {
     margin: 110px 0 60px 0;
 }
 
-.presentation {
+.presentation-aboutme {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     margin-left: 50px;
 }
 
