@@ -410,14 +410,14 @@ h1 {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin: 40px 0 40px 0;
+    margin: 40px 0;
 }
 
 .presentation-aboutme {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    margin-top: 0.7em;
+    margin-top: 1.5em;
     text-align: center;
 }
 
@@ -435,7 +435,7 @@ h1 {
     text-wrap: pretty;
 }
 
-/* About Me Tablets/Desktop */
+/* About Me Tablets */
 
 @media screen and (min-width: 600px) {
     .aboutme-main {
@@ -444,13 +444,26 @@ h1 {
     }
     
     .presentation-aboutme {
-        margin-left: 50px;
+        margin: 0;
+        margin-left: 40px;
         text-align: start;
         white-space: pre-wrap;
     }
     
     .aboutme-description {
-        width: 450px;
+        width: 400px;
         font-size: 0.9em;
+    }
+}
+
+/* About Me Desktop */
+
+@media screen and (min-width: 900px) {
+    .presentation-aboutme {
+        margin-left: 50px;
+    }
+
+    .aboutme-description {
+        width: 450px;
     }
 }
