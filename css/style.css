@@ -155,7 +155,7 @@ h1 {
     font-size: 1em;
 }
 
-.retrato {
+.portrait {
     border-radius: 150px;
     box-shadow: 0 0 15px #555;
     margin-top: 20px;
@@ -205,7 +205,7 @@ h1 {
 .project {
     margin: 20px;
     width: 350px;
-    height: 350px;
+    height: 360px;
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -219,7 +219,7 @@ h1 {
 }
 
 .project-description {
-    margin: 10px 10px 0 10px;
+    margin: 0px 10px 0 10px;
 }
 
 /* Project Articles Tablets */
@@ -233,7 +233,7 @@ h1 {
     
     .project {
         width: 350px;
-        height: 350px;
+        height: 360px;
     }
 }
 
@@ -242,7 +242,7 @@ h1 {
 @media screen and (min-width: 900px) {
     .project {
         width: 400px;
-        height: 360px;
+        height: 370px;
     }
 }
 
