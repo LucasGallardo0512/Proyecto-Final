@@ -92,21 +92,12 @@ h2 {
 form {
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #999;
     box-shadow: 0 0 20px #666;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-}
-
-input, textarea {
-    color: #222;
-    box-sizing: border-box;
-    padding: 3px;
-    font-family: sans-serif;
-    background-color: #bbb;
-    border: #666 solid 1px;
 }
 
 ::placeholder {
