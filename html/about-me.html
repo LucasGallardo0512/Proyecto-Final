@@ -19,7 +19,7 @@
         </nav>
     </header>
     <main class="aboutme-main">
-        <img src="../img/retrato-anonimo.jpg" class="retrato-aboutme">
+        <img src="../img/retrato-anonimo.jpg" class="portrait-aboutme">
         <section class="presentation-aboutme">
             <h1>About Me</h1>
             <p class="aboutme-description">    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis similique quibusdam numquam nam provident dolorum nostrum, voluptates natus praesentium unde quas eum veniam tempora eveniet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptas voluptate enim repellat deleniti excepturi odio molestias amet dolores! quo doloremque delectus neque ex ratione amet ea praesentium. Lorem ipsum dolor sit. At soluta voluptas minus itaque blanditiis amet optio harum reprehenderit consequuntur?</p>
@@ -28,18 +28,22 @@
     </main>
     <footer>
         <h2>Contact me</h2>
-        <form>
-            <div class="form-inputs">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required placeholder="John Doe" class="input-name" lin>
-                <label for="email" class="input-email">Email:</label>
-                <input type="email" name="email" required placeholder="johndoe@gmail.com ">
+        <form class="container">
+            <div class="form-inputs row">
+                <div class="col-12 col-sm-6 mb-2">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required placeholder="John Doe" class="form-control" lin>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label for="email" class="input-email">Email:</label>
+                    <input type="email" name="email" required placeholder="johndoe@gmail.com" class="form-control">
+                </div>
             </div>
-            <div class="form-textarea">
+            <div class="form-textarea row">
                 <label for="message">Message:</label>
-                <textarea name="message" required rows="5" placeholder="I'm texting you for..."></textarea>
+                <textarea name="message" required rows="4" placeholder="I'm texting you for..." class="form-control"></textarea>
             </div>
-            <input type="submit" value="Submit">
+            <input class="btn btn-secondary" type="submit" value="Submit">
         </form>
     </footer>
 </body>

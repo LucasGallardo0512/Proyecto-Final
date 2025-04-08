@@ -109,11 +109,6 @@ input, textarea {
     border: #666 solid 1px;
 }
 
-.input-name {
-    margin-right: 10px;
-}
-
-
 ::placeholder {
     color: #777;
 }
@@ -201,7 +196,7 @@ h1 {
         font-size: 0.9em;
     }
     
-    .retrato {
+    .portrait {
         margin-left: 20px;
         margin-top: 0;
     }
@@ -421,7 +416,7 @@ h1 {
     text-align: center;
 }
 
-.retrato-aboutme {
+.portrait-aboutme {
     width: 300px;
     border-radius: 150px;
     box-shadow: 0 0 15px #555;
