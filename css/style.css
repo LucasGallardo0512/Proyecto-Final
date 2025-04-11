@@ -196,9 +196,8 @@ h1 {
 /* Project Articles Mobile */
 
 .main-projects {
-    display: flex;
-    flex-flow: column;
-    align-items: space-evenly;
+    display: grid;
+    justify-items: center;
     padding: 30px 0;
 }
 
@@ -219,21 +218,18 @@ h1 {
 }
 
 .project-description {
-    margin: 0px 10px 0 10px;
+    margin: 0px 10px;
 }
 
 /* Project Articles Tablets */
 
 @media screen and (min-width: 600px) {
     .main-projects {
-        flex-flow: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        grid-template-columns: repeat(2,1fr);
     }
-    
-    .project {
-        width: 350px;
-        height: 360px;
+
+    .main-projects .last-child {
+        grid-column: span 2;
     }
 }
 
@@ -250,10 +246,9 @@ h1 {
 
 .main-abilities {
     padding: 30px 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1,1fr;
+    justify-items: center;
 }
 
 .ability {
@@ -290,12 +285,11 @@ h1 {
     width: 210px;
 }
 
-/* Projects Tablets/Desktop */
+/* Abilities Tablets/Desktop */
 
 @media screen and (min-width: 600px) {
     .main-abilities {
-        flex-flow: row;
-        justify-content: space-evenly;
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
