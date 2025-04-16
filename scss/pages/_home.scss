@@ -1,0 +1,29 @@
+
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+
+@import "components/portrait";
+
+/* Home Styles */
+
+.home-main {
+    @include column;
+    margin: 20px 0 35px 0;
+    .presentation {
+        @include column;
+        text-align: center;
+        h1 {
+            font-size: 2em;
+        }
+        .subtitle {
+            margin-bottom: 0.4em;
+            font-size: 1.2em;
+        }
+        .description {
+            width: 80vw;
+        }
+    }
+    .portrait {
+        margin-top: 20px;
+    }
+}

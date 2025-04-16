@@ -14,35 +14,43 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="abilities.html">Abilities</a></li>
-                <li class="item-selected"><a href="experience.html">Experience</a></li>
+                <li><a href="" class="item-selected">Experiences</a></li>
                 <li><a href="about-me.html">About me</a></li>
             </ul>
         </nav>
     </header>
     <main class="main-experience">
-        <div class="startline"></div>
         <div class="temporal-line">
             <div class="superior">
-                <section class="experience up">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
-                    <h2 class="experience-superior-name">Example (2018-2020)</h2>
+                <section class="experience uno">
+                    <div class="vertical">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
+                        <h2 class="experience-superior-name">Example (2018-2020)</h2>
+                    </div>
                     <div class="line-exp"></div>
                 </section>
-                <section class="experience tres up">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
-                    <h2 class="experience-superior-name">Example (2021-2024)</h2>
+                <section class="experience tres">
+                    <div class="vertical">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
+                        <h2 class="experience-superior-name">Example (2018-2020)</h2>
+                    </div>
                     <div class="line-exp"></div>
+                </section>
             </div>
             <div class="line"></div>
             <div class="inferior">
-                <section class="experience dos down">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
-                    <h2 class="experience-inferior-name">Example (2020-2021)</h2>
+                <section class="experience dos">
+                    <div class="vertical">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
+                        <h2 class="experience-inferior-name">Example (2018-2020)</h2>
+                    </div>
                     <div class="line-exp"></div>
                 </section>
-                <section class="experience cuatro down">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
-                    <h2 class="experience-inferior-name">Example (2024-Present)</h2>
+                <section class="experience cuatro">
+                    <div class="vertical">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio natus, velit mollitia tenetur reprehenderit quia explicabo et odio corporis ipsam accusantium aspernatur nobis assumenda iure eligendi maxime.</p>
+                        <h2 class="experience-inferior-name">Example (2018-2020)</h2>
+                    </div>
                     <div class="line-exp"></div>
                 </section>
             </div>
@@ -51,20 +59,20 @@
     </main>
     <footer>
         <h2>Contact me</h2>
-        <form class="container">
+        <form class="container contact-form">
             <div class="form-inputs row">
-                <div class="col-12 col-sm-6 mb-2">
+                <div class="col-12 col-sm-6 mb-2 form-inputs-text">
                     <label for="name">Name:</label>
                     <input type="text" name="name" required placeholder="John Doe" class="form-control" lin>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 mb-2 form-input-text">
                     <label for="email" class="input-email">Email:</label>
                     <input type="email" name="email" required placeholder="johndoe@gmail.com" class="form-control">
                 </div>
             </div>
-            <div class="form-textarea row">
+            <div class="form-textarea mb-3 row">
                 <label for="message">Message:</label>
-                <textarea name="message" required rows="4" placeholder="I'm texting you for..." class="form-control"></textarea>
+                <textarea name="message" required rows="4" placeholder="I'm texting you for..." class="form-control" id="textarea"></textarea>
             </div>
             <input class="btn btn-secondary" type="submit" value="Submit">
         </form>

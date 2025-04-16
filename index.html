@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>
-                <li class="item-selected"><a href="index.html">Home</a></li>
+                <li><a href="" class="item-selected">Home</a></li>
                 <li><a href="html/projects.html">Projects</a></li>
                 <li><a href="html/abilities.html">Abilities</a></li>
                 <li><a href="html/experience.html">Experience</a></li>
@@ -29,20 +29,20 @@
     </main>
     <footer>
         <h2>Contact me</h2>
-        <form class="container">
+        <form class="container contact-form">
             <div class="form-inputs row">
-                <div class="col-12 col-sm-6 mb-2">
+                <div class="col-12 col-sm-6 mb-2 form-inputs-text">
                     <label for="name">Name:</label>
-                    <input type="text" name="name" required placeholder="John Doe" class="form-control" lin>
+                    <input type="text" name="name" id="name" required placeholder="John Doe" class="form-control">
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6 mb-2 form-inputs-text">
                     <label for="email" class="input-email">Email:</label>
-                    <input type="email" name="email" required placeholder="johndoe@gmail.com" class="form-control">
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" class="form-control">
                 </div>
             </div>
-            <div class="form-textarea row">
+            <div class="form-textarea mb-3 row">
                 <label for="message">Message:</label>
-                <textarea name="message" required rows="4" placeholder="I'm texting you for..." class="form-control"></textarea>
+                <textarea name="message" required rows="4" placeholder="I'm texting you for..." class="form-control" id="textarea"></textarea>
             </div>
             <input class="btn btn-secondary" type="submit" value="Submit">
         </form>

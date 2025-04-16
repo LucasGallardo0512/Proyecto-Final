@@ -1,0 +1,24 @@
+// Mixins
+
+@mixin column {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin experience {
+        text-align: center;
+        text-wrap: pretty;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }

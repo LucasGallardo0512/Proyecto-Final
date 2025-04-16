@@ -1,0 +1,129 @@
+
+@import "../abstracts/mixin";
+
+/* MQ Tablets */
+
+@media screen and (min-width: 600px) {
+    body {
+        min-height: 100vh;
+    }
+
+/* Header */
+
+    header {
+        font-size: 1.5em;
+        nav {
+            ul {
+                @include row;
+                justify-content: space-evenly;
+                padding: 3px 0;
+                li {
+                    box-shadow: 0 0 0 #000;
+                    a {
+                        width: 140px;
+                        border-radius: 15px;
+                    }
+                }
+                .item-selected {
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+
+/* Footer */
+
+    footer {
+        padding: 15px 30px 30px 30px;
+        .contact-form {
+            margin-top: 15px;
+            padding: 15px 0;
+            .form-inputs {
+                width: 95%;
+            }
+            .form-textarea {
+                padding: 0 10px;
+                width: 95%;
+            }
+        }
+    }
+
+/* Home */
+
+    .home-main {
+        @include row;
+        justify-content: space-evenly;
+        .presentation {
+            @include column;
+            align-items: start;
+            text-align: start;
+            .description {
+                width: 40vw;
+            }
+        }
+        .portrait {
+            width: 40vw;
+        }
+    }
+
+/* Projects */
+
+    .main-projects {
+        grid-template-columns: repeat(2,1fr);
+        .project {
+            width: 40vw;
+            box-shadow: 0 0 20px #444;
+        }
+    :last-child {
+            grid-column: span 2;
+        }
+    }
+
+/* Abilities */
+
+    .main-abilities {
+        height: 100%;
+        justify-content: space-evenly;
+        .ability {
+            width: 35%;
+        }
+        .github {
+            margin-bottom: 5px;
+        }
+    }
+
+/* Experiences */
+
+    .main-experience {
+        .temporal-line {
+            height: 55vh;
+            .superior {
+                .uno {
+                    margin-top: 5vh;
+                    margin-bottom: 15vh;
+                }
+                .tres {
+                    margin-bottom: 15vh;
+                }
+            }
+            .inferior{
+                .dos {
+                    margin-top: 15vh;
+                }
+                .cuatro {
+                    margin-bottom: 3vh;
+                }
+            }
+            }
+        }
+
+/* About me */
+
+    .aboutme-main {
+        .portrait {
+        width: 40vw;
+        }
+    }
+
+}
+

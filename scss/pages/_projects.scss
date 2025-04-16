@@ -1,0 +1,32 @@
+
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+
+/* Projects Styles */
+
+.main-projects {
+    display: grid;
+    justify-items: center;
+    gap: 2em;
+    padding: 40px 0;
+    .project {
+        width: 80vw;
+        height: auto;
+        @include column;
+        justify-content: space-between;
+        box-shadow: 0 0 10px #444;
+        border-radius: 20px;
+        overflow: hidden;
+        .project-img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+            border-bottom: #000 1px solid;
+        }
+        .project-description {
+            line-height: 1.2;
+            text-align: center;
+            text-wrap: pretty;
+            margin: 7px 10px 10px 10px;
+        }
+    }
+}

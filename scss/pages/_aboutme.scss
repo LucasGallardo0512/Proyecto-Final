@@ -1,0 +1,23 @@
+
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+
+@import "components/portrait";
+
+/* About me Styles */
+
+.aboutme-main {
+    @include column;
+    margin: 30px 0 30px 0;
+    .portrait {
+    margin-bottom: 20px;
+    }
+    .aboutme-presentation {
+        @include column;
+        text-align: center;
+        }
+        .aboutme-description {
+            width: 80vw;
+            text-wrap: pretty;
+        }
+}
