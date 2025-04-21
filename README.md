@@ -1,1 +1,1 @@
-Migrado a SASS y completamente responsive.
+Migrado a SASS, completamente responsive, textos lorem e imágenes reemplazados.
