@@ -49,7 +49,7 @@
 /* Home */
 
     .home-main {
-        height: 72vh;
+        min-height: 72vh;
         justify-content: center;
         .presentation {
             .description {
@@ -75,7 +75,8 @@
                 border-bottom: #000 1px solid;
             }
             .project-description {
-                font-size: 0.9em;
+                margin: auto;
+                padding: 1em;
             }
         }
     :last-child {
@@ -105,7 +106,7 @@
 
     .aboutme-main {
         @include row;
-        height: 80vh;
+        min-height: 80vh;
         margin: 0;
         .portrait {
         width: 300px;
@@ -124,7 +125,7 @@
 /* Experience */
 
     .main-experience {
-        height: 80vh;
+        min-height: 80vh;
         padding: 30px 10vh;
         @include row;
         .temporal-line {
@@ -134,8 +135,9 @@
                 width: 100%;
                 @include row;
                 justify-content: space-between;
+                align-items: end;
                 .experience {
-                    @include experience;
+                    flex-flow: column;
                     .vertical{
                         p {
                             width: 400px;
@@ -153,18 +155,24 @@
                 }
             .uno {
                 margin: 0;
+                h2 {
+                    white-space: pre-wrap;
+                }
             }
             .tres {
                 margin: 0;
                 margin-right: 15vw;
+                h2 {
+                    white-space: pre-wrap;
+                }
             }
             }
             .inferior {
                 width: 100%;
                 @include row;
                 justify-content: space-between;
+                align-items: start;
                 .experience {
-                    @include experience;
                     flex-flow: column-reverse;
                     .vertical{
                         flex-flow: column-reverse;
@@ -186,10 +194,16 @@
                 .dos {
                     margin: 0;
                     margin-left: 15vw;
+                    h2 {
+                        white-space: pre-wrap;
+                    }
                 }
                 .cuatro {
                     margin: 0;
                     margin-left: 10vw;
+                    h2 {
+                        white-space: pre-wrap;
+                    }
                 }
             }
             .line {

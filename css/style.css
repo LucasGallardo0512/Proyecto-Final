@@ -30,7 +30,7 @@ header nav ul li a {
   text-decoration: none;
   color: #000;
   text-align: center;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 header nav ul li .item-selected {
   border-bottom: #444 solid 2px;
@@ -125,6 +125,8 @@ footer .contact-form .form-textarea textarea {
 .main-projects .project {
   width: 80vw;
   height: auto;
+  text-align: center;
+  text-wrap: pretty;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -141,8 +143,6 @@ footer .contact-form .form-textarea textarea {
 }
 .main-projects .project .project-description {
   line-height: 1.2;
-  text-align: center;
-  text-wrap: pretty;
   margin: 7px 10px 10px 10px;
 }
 
@@ -205,6 +205,7 @@ footer .contact-form .form-textarea textarea {
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
+  white-space: pretty;
 }
 .main-experience .temporal-line .superior .experience {
   text-align: center;
@@ -218,6 +219,7 @@ footer .contact-form .form-textarea textarea {
 .main-experience .temporal-line .superior .experience .vertical {
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 .main-experience .temporal-line .superior .experience p {
   width: 40vw;
@@ -233,13 +235,14 @@ footer .contact-form .form-textarea textarea {
   background-color: #000;
 }
 .main-experience .temporal-line .superior .tres {
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
 }
 .main-experience .temporal-line .inferior {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
+  white-space: pretty;
 }
 .main-experience .temporal-line .inferior .experience {
   text-align: center;
@@ -253,6 +256,7 @@ footer .contact-form .form-textarea textarea {
 .main-experience .temporal-line .inferior .experience .vertical {
   display: flex;
   flex-flow: column;
+  align-items: center;
 }
 .main-experience .temporal-line .inferior .experience .vertical p {
   width: 40vw;
@@ -400,12 +404,18 @@ footer .contact-form .form-textarea textarea {
   .main-experience .temporal-line {
     height: 55vh;
   }
+  .main-experience .temporal-line .superior {
+    align-items: end;
+  }
   .main-experience .temporal-line .superior .uno {
     margin-top: 5vh;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
   }
   .main-experience .temporal-line .superior .tres {
-    margin-bottom: 15vh;
+    margin-bottom: 14vh;
+  }
+  .main-experience .temporal-line .inferior {
+    align-items: start;
   }
   .main-experience .temporal-line .inferior .dos {
     margin-top: 15vh;
@@ -460,7 +470,7 @@ footer .contact-form .form-textarea textarea {
   }
   /* Home */
   .home-main {
-    height: 72vh;
+    min-height: 72vh;
     justify-content: center;
   }
   .home-main .presentation .description {
@@ -484,7 +494,8 @@ footer .contact-form .form-textarea textarea {
     border-bottom: #000 1px solid;
   }
   .main-projects .project .project-description {
-    font-size: 0.9em;
+    margin: auto;
+    padding: 1em;
   }
   .main-projects :last-child {
     grid-column: span 2;
@@ -511,7 +522,7 @@ footer .contact-form .form-textarea textarea {
     flex-flow: row;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    min-height: 80vh;
     margin: 0;
   }
   .aboutme-main .portrait {
@@ -531,7 +542,7 @@ footer .contact-form .form-textarea textarea {
   }
   /* Experience */
   .main-experience {
-    height: 80vh;
+    min-height: 80vh;
     padding: 30px 10vh;
     display: flex;
     flex-flow: row;
@@ -552,14 +563,10 @@ footer .contact-form .form-textarea textarea {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    align-items: end;
   }
   .main-experience .temporal-line .superior .experience {
-    text-align: center;
-    text-wrap: pretty;
-    display: flex;
     flex-flow: column;
-    align-items: center;
-    justify-content: center;
   }
   .main-experience .temporal-line .superior .experience .vertical p {
     width: 400px;
@@ -576,9 +583,15 @@ footer .contact-form .form-textarea textarea {
   .main-experience .temporal-line .superior .uno {
     margin: 0;
   }
+  .main-experience .temporal-line .superior .uno h2 {
+    white-space: pre-wrap;
+  }
   .main-experience .temporal-line .superior .tres {
     margin: 0;
     margin-right: 15vw;
+  }
+  .main-experience .temporal-line .superior .tres h2 {
+    white-space: pre-wrap;
   }
   .main-experience .temporal-line .inferior {
     width: 100%;
@@ -587,14 +600,9 @@ footer .contact-form .form-textarea textarea {
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+    align-items: start;
   }
   .main-experience .temporal-line .inferior .experience {
-    text-align: center;
-    text-wrap: pretty;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
     flex-flow: column-reverse;
   }
   .main-experience .temporal-line .inferior .experience .vertical {
@@ -617,9 +625,15 @@ footer .contact-form .form-textarea textarea {
     margin: 0;
     margin-left: 15vw;
   }
+  .main-experience .temporal-line .inferior .dos h2 {
+    white-space: pre-wrap;
+  }
   .main-experience .temporal-line .inferior .cuatro {
     margin: 0;
     margin-left: 10vw;
+  }
+  .main-experience .temporal-line .inferior .cuatro h2 {
+    white-space: pre-wrap;
   }
   .main-experience .temporal-line .line {
     height: 5px;

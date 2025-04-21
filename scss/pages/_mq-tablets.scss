@@ -98,15 +98,17 @@
         .temporal-line {
             height: 55vh;
             .superior {
+                align-items: end;
                 .uno {
                     margin-top: 5vh;
-                    margin-bottom: 15vh;
+                    margin-bottom: 10vh;
                 }
                 .tres {
-                    margin-bottom: 15vh;
+                    margin-bottom: 14vh;
                 }
             }
             .inferior{
+                align-items: start;
                 .dos {
                     margin-top: 15vh;
                 }

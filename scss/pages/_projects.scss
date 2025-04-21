@@ -12,7 +12,7 @@
     .project {
         width: 80vw;
         height: auto;
-        @include column;
+        @include card;
         justify-content: space-between;
         box-shadow: 0 0 10px #444;
         border-radius: 20px;
@@ -24,8 +24,6 @@
         }
         .project-description {
             line-height: 1.2;
-            text-align: center;
-            text-wrap: pretty;
             margin: 7px 10px 10px 10px;
         }
     }
