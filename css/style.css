@@ -7,9 +7,9 @@
 
 /* Header Styles */
 header {
-  background-color: #aaa;
+  background-color: #999;
   font-size: 1.3em;
-  box-shadow: 0 0 20px #444;
+  box-shadow: 0 0 20px #333;
 }
 header nav ul {
   list-style: none;
@@ -31,18 +31,30 @@ header nav ul li a {
   color: #000;
   text-align: center;
   white-space: nowrap;
+  text-shadow: 0 0 1px #444;
 }
 header nav ul li .item-selected {
   border-bottom: #444 solid 2px;
-  background-color: #999;
+  background-color: #888;
   user-select: none;
+}
+header h1 {
+  display: inline;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #bbb;
+  border: 1px solid #444;
+  text-shadow: 0 0 2px #444;
 }
 
 /* Footer Styles */
 footer {
   background: linear-gradient(#aaa, #444);
   padding: 15px 20px 25px 20px;
-  box-shadow: 0 0 20px #444;
+  box-shadow: 0 0 20px #333;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -57,8 +69,8 @@ footer .contact-form {
   padding: 10px;
   margin: 0;
   margin-top: 15px;
-  background-color: #aaa;
-  box-shadow: 0 0 20px #444;
+  background-color: #999;
+  box-shadow: 0 0 20px #333;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -83,7 +95,7 @@ footer .contact-form .form-textarea textarea {
 .portrait {
   width: 50vw;
   border-radius: 50%;
-  box-shadow: 0 0 20px #444;
+  box-shadow: 0 0 20px #333;
 }
 
 /* Home Styles */
@@ -288,7 +300,7 @@ footer .contact-form .form-textarea textarea {
 .portrait {
   width: 50vw;
   border-radius: 50%;
-  box-shadow: 0 0 20px #444;
+  box-shadow: 0 0 20px #333;
 }
 
 /* About me Styles */
@@ -455,7 +467,7 @@ footer .contact-form .form-textarea textarea {
   }
   header nav ul li:hover a {
     scale: 1.1;
-    background-color: #888;
+    background-color: #777;
   }
   /* Footer */
   footer {
