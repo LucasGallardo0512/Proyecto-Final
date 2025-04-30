@@ -20,12 +20,13 @@
             box-shadow: $bordershadow;
     }
     .main-abilities {
-        padding: 2em 0 0 0;
+        padding-top: 2em;
         @include row;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 2.5em;
+        gap: 2em;
         .ability {
-            width: 40%;
+            width: 35%;
             aspect-ratio: 1;
             box-shadow: 0 0 15px #444;
             border-radius: 50%;
@@ -35,6 +36,7 @@
             background-color: #ddd;
             .logo {
                 height: 90%;
+                user-select: none;
             }
             .html-css {
                 height: 80%;
