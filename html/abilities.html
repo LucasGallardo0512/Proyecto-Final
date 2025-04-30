@@ -9,13 +9,53 @@
 </head>
 <body>
     <header>
+        <img src="../img/icon.png" class="icon" alt="My Icon">
+        <nav class="navbar navbar-expand-lg bg-transparent p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand my-icon ms-2 py-2 " href="#">
+                    <img src="../img/icon.png" alt="My Icon">
+                </a>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link item-selected" href="#" disabled>Abilites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="experience.html">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-me.html">About Me</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a class="item-selected">Abilities</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="about-me.html">About me</a></li>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="item-selected">Abilities</a>
+                </li>
+                <li>
+                    <a href="experience.html">Experience</a>
+                </li>
+                <li>
+                    <a href="about-me.html">About me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -58,5 +98,7 @@
             </div>
             <input class="btn btn-secondary" type="submit" value="Submit">
         </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

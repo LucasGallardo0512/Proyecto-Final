@@ -11,8 +11,16 @@
 /* Header */
 
     header {
+        .icon {
+            display: block;
+            margin: 5px auto;
+        }
         font-size: 1.5em;
+        .navbar {
+            display: none;
+        }
         nav {
+            display: block;
             ul {
                 @include row;
                 justify-content: space-evenly;
