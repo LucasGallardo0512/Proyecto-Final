@@ -1,6 +1,3 @@
-
-@import "../abstracts/mixin";
-
 /* MQ Desktop */
 
 /* Header */
@@ -12,10 +9,10 @@
             left: 10px
         }
         @include row;
-        height: 8vh;
         font-size: 1.5em;
         nav {
             width: 100vw;
+            padding: 3px 0;
             ul {
                 padding: 0;
                 li {
@@ -40,14 +37,7 @@
 /* Footer */
 
     footer {
-        padding: 15px 0 20px 0;
-        h2 {
-            height: 9vh;
-        }
-        .contact-form {
-            max-width: 55vw;
-            padding: 10px 0;
-        }
+        padding: 15px 0;
     }
 
 /* Home */
@@ -68,40 +58,25 @@
 
 /* Projects */
 
-    .main-projects {
-        grid-template-columns: repeat(2,1fr);
-        .project {
-            width: 35vw;
-            box-shadow: 0 0 20px #444;
-            .project-img {
-                height: 80%;
-                border-radius: 20px 20px 0 0;
-                border-bottom: #000 1px solid;
+    main {
+        height: auto;
+        .main-projects {
+            grid-template-columns: repeat(2,1fr);
+            .project {
+                width: 35vw;
+                box-shadow: 0 0 20px #444;
+                .project-img {
+                    height: 80%;
+                    border-radius: 20px 20px 0 0;
+                    border-bottom: #000 1px solid;
+                }
+                .project-description {
+                    margin: auto;
+                    padding: 1em;
+                }
             }
-            .project-description {
-                margin: auto;
-                padding: 1em;
-            }
-        }
-    :last-child {
-            grid-column: span 2;
-        }
-    }
-
-/* Abilities */
-
-    .main-abilities {
-        grid-template-columns: repeat(4,1fr);
-        padding: 40px 0;
-        .ability {
-            width: 20%;
-            margin: 0 25px;
-            .html-css {
-                height: 80%;
-                margin-top: 35px;
-            }
-            .github {
-                margin-bottom: 2px;
+        :last-child {
+                grid-column: span 2;
             }
         }
     }
@@ -110,7 +85,8 @@
 
     .aboutme-main {
         @include row;
-        min-height: 80vh;
+        flex-wrap: wrap;
+        padding-top: 2em;
         margin: 0;
         .portrait {
         width: 300px;
@@ -124,11 +100,28 @@
             .aboutme-description {
                 width: 40vw;
             }
+        .main-abilities {
+            grid-template-columns: repeat(4,1fr);
+            padding: 40px 0;
+            .ability {
+                width: 10%;
+                margin: 0 25px;
+                .html-css {
+                    height: 80%;
+                    margin-top: 17px;
+                }
+                .github {
+                    margin-bottom: 2px;
+                }
+            }
+        }        
     }
 
 /* Experience */
 
+    main {
     .main-experience {
+        margin: 0;
         min-height: 80vh;
         padding: 30px 10vh;
         @include row;
@@ -222,4 +215,17 @@
             width: 40px;
             margin-left: -20px;
         }
+    }
+
+/* Contact Me */
+
+    body {
+        .contact-me-main {
+            padding: 15vh;
+            .contact-form {
+                margin-top: 25px;
+            }
+        }
+    }
+
 }

@@ -2,10 +2,19 @@
 
 @import "base/root";
 
+// Abstracts
+
+@import "abstracts/variables";
+@import "abstracts/mixin";
+
 // Header and Footer Styles
 
 @import "pages/components/header";
 @import "pages/components/footer";
+
+// Extra
+
+@import "pages/components/portrait";
 
 // Home Styles
 
@@ -15,17 +24,17 @@
 
 @import "pages/projects";
 
-// Abilities Styles
+// About me Styles
 
-@import "pages/abilities";
+@import "pages/aboutme";
 
 // Experiencies Styles
 
 @import "pages/experience";
 
-// About me Styles
+// Contact me Styles
 
-@import "pages/aboutme";
+@import "pages/contact-me";
 
 // MediaQueries Tablet 
 
@@ -34,14 +43,3 @@
 // MediaQueries Desktop
 
 @import "pages/mq-desktop";
-
-// Base
-
-body {
-    background-color: #ccc;
-    font-family: sans-serif;
-    margin: 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-}

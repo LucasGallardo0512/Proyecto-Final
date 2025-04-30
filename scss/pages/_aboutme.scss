@@ -1,9 +1,3 @@
-
-@import "../abstracts/variables";
-@import "../abstracts/mixin";
-
-@import "components/portrait";
-
 /* About me Styles */
 
 .aboutme-main {
@@ -20,4 +14,41 @@
             width: 80vw;
             text-wrap: pretty;
         }
+    h2 {
+            margin-top: 1em;
+            width: 100vw;
+            box-shadow: $bordershadow;
+    }
+    .main-abilities {
+        padding: 2em 0 0 0;
+        @include row;
+        flex-wrap: wrap;
+        gap: 2.5em;
+        .ability {
+            width: 40%;
+            aspect-ratio: 1;
+            box-shadow: 0 0 15px #444;
+            border-radius: 50%;
+            @include column;
+            transition-property: scale,box-shadow;
+            transition-duration: .2s;
+            background-color: #ddd;
+            .logo {
+                height: 90%;
+            }
+            .html-css {
+                height: 80%;
+                margin-top: 17px;
+            }
+            .github {
+                margin-bottom: 2px;
+            }
+        }
+        .ability:hover {
+            scale: 1.1;
+            box-shadow: 0 0 25px #222;
+            transition-duration: .4s;
+        }
+    }
 }
+

@@ -1,7 +1,3 @@
-
-@import "../../abstracts/variables";
-@import "../../abstracts/mixin";
-
 /* Header Styles */
 
 header {
@@ -48,5 +44,4 @@ header {
     padding: 10px 0;
     background-color: $bg-terceario;
     border: 1px solid #444;
-    text-shadow: 0 0 2px #444;
 }
