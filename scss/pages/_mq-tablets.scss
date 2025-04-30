@@ -77,10 +77,12 @@
 
     .aboutme-main {
         height: auto;
-        .portrait {
-        width: 40vw;
+        .aboutme-section {
+            .portrait {
+            width: 40vw;
+            }
         }
-        .main-abilities {
+        .abilities-section {
             .ability {
                 width: 25%;
             }

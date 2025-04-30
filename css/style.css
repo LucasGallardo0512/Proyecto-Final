@@ -149,28 +149,34 @@ footer h2 {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  margin: 30px 0 30px 0;
+  padding: 2em 0 2em 0;
 }
-.aboutme-main .portrait {
+.aboutme-main .aboutme-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.aboutme-main .aboutme-section .portrait {
   margin-bottom: 20px;
 }
-.aboutme-main .aboutme-presentation {
+.aboutme-main .aboutme-section .aboutme-presentation {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.aboutme-main .aboutme-description {
+.aboutme-main .aboutme-section .aboutme-presentation .aboutme-description {
   width: 80vw;
   text-wrap: pretty;
 }
 .aboutme-main h2 {
-  margin-top: 1em;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0 0 20px #333;
 }
-.aboutme-main .main-abilities {
+.aboutme-main .abilities-section {
   padding-top: 2em;
   display: flex;
   flex-flow: row;
@@ -178,9 +184,9 @@ footer h2 {
   justify-content: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1.5em;
 }
-.aboutme-main .main-abilities .ability {
+.aboutme-main .abilities-section .ability {
   width: 35%;
   aspect-ratio: 1;
   box-shadow: 0 0 15px #444;
@@ -193,18 +199,18 @@ footer h2 {
   transition-duration: 0.2s;
   background-color: #ddd;
 }
-.aboutme-main .main-abilities .ability .logo {
+.aboutme-main .abilities-section .ability .logo {
   height: 90%;
   user-select: none;
 }
-.aboutme-main .main-abilities .ability .html-css {
+.aboutme-main .abilities-section .ability .html-css {
   height: 80%;
   margin-top: 17px;
 }
-.aboutme-main .main-abilities .ability .github {
+.aboutme-main .abilities-section .ability .github {
   margin-bottom: 2px;
 }
-.aboutme-main .main-abilities .ability:hover {
+.aboutme-main .abilities-section .ability:hover {
   scale: 1.1;
   box-shadow: 0 0 25px #222;
   transition-duration: 0.4s;
@@ -431,13 +437,13 @@ body .contact-me-main .contact-form .form-textarea textarea {
   .aboutme-main {
     height: auto;
   }
-  .aboutme-main .portrait {
+  .aboutme-main .aboutme-section .portrait {
     width: 40vw;
   }
-  .aboutme-main .main-abilities .ability {
+  .aboutme-main .abilities-section .ability {
     width: 25%;
   }
-  .aboutme-main .main-abilities .github {
+  .aboutme-main .abilities-section .github {
     margin-bottom: 7px;
   }
   /* Experiences */
@@ -555,40 +561,42 @@ body .contact-me-main .contact-form .form-textarea textarea {
   }
   /* About me */
   .aboutme-main {
+    padding: 2em 0;
+  }
+  .aboutme-main .aboutme-section {
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 2em;
     margin: 0;
+    padding: 1em 0 3em 0;
   }
-  .aboutme-main .portrait {
+  .aboutme-main .aboutme-section .portrait {
     width: 300px;
     margin-bottom: 0;
     margin-right: 20px;
   }
-  .aboutme-main .aboutme-presentation {
+  .aboutme-main .aboutme-section .aboutme-presentation {
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .aboutme-main .aboutme-description {
+  .aboutme-main .aboutme-section .aboutme-presentation .aboutme-description {
     width: 40vw;
   }
-  .aboutme-main .main-abilities {
-    padding: 40px 0;
+  .aboutme-main .abilities-section {
+    padding-top: 2em;
   }
-  .aboutme-main .main-abilities .ability {
+  .aboutme-main .abilities-section .ability {
     width: 10%;
   }
-  .aboutme-main .main-abilities .ability .html-css {
+  .aboutme-main .abilities-section .ability .html-css {
     height: 80%;
     margin-top: 15px;
   }
-  .aboutme-main .main-abilities .ability .github {
+  .aboutme-main .abilities-section .ability .github {
     margin-bottom: 2px;
   }
   /* Experience */

@@ -84,24 +84,26 @@
 /* About me */
 
     .aboutme-main {
-        @include row;
-        flex-wrap: wrap;
-        padding-top: 2em;
-        margin: 0;
-        .portrait {
-        width: 300px;
-        margin-bottom: 0;
-        margin-right: 20px
+        padding: 2em 0;
+        .aboutme-section {
+            @include row;
+            margin: 0;
+            padding: 1em 0 3em 0;
+            .portrait {
+            width: 300px;
+            margin-bottom: 0;
+            margin-right: 20px
+            }
+            .aboutme-presentation {
+                @include column;
+                text-align: center;
+                .aboutme-description {
+                    width: 40vw;
+                }
+            }
         }
-        .aboutme-presentation {
-            @include column;
-            text-align: center;
-            }
-            .aboutme-description {
-                width: 40vw;
-            }
-        .main-abilities {
-            padding: 40px 0;
+        .abilities-section {
+            padding-top: 2em;
             .ability {
                 width: 10%;
                 .html-css {
@@ -113,7 +115,7 @@
                 }
             }
         }        
-    }
+        }
 
 /* Experience */
 
