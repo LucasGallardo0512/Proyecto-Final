@@ -1,6 +1,3 @@
-
-@import "../abstracts/mixin";
-
 /* MQ Tablets */
 
 @media screen and (min-width: 600px) {
@@ -42,18 +39,7 @@
 /* Footer */
 
     footer {
-        padding: 15px 30px 30px 30px;
-        .contact-form {
-            margin-top: 15px;
-            padding: 15px 0;
-            .form-inputs {
-                width: 95%;
-            }
-            .form-textarea {
-                padding: 0 10px;
-                width: 95%;
-            }
-        }
+        padding: 15px 0 20px;
     }
 
 /* Home */
@@ -87,51 +73,69 @@
         }
     }
 
-/* Abilities */
+/* About me */
 
-    .main-abilities {
-        height: 100%;
-        justify-content: space-evenly;
-        .ability {
-            width: 35%;
+    .aboutme-main {
+        height: auto;
+        .portrait {
+        width: 40vw;
         }
-        .github {
-            margin-bottom: 5px;
+        .main-abilities {
+            justify-content: space-evenly;
+            .ability {
+                width: 25%;
+            }
+            .github {
+                margin-bottom: 5px;
+            }
         }
     }
 
 /* Experiences */
 
-    .main-experience {
-        .temporal-line {
-            height: 55vh;
-            .superior {
-                align-items: end;
-                .uno {
-                    margin-top: 5vh;
-                    margin-bottom: 10vh;
+    main {
+        height: 100%;
+        .main-experience {
+            margin-top: 5vh;
+            .temporal-line {
+                height: 55vh;
+                .superior {
+                    align-items: end;
+                    .uno {
+                        margin-top: 5vh;
+                        margin-bottom: 10vh;
+                    }
+                    .tres {
+                        margin-bottom: 14vh;
+                    }
                 }
-                .tres {
-                    margin-bottom: 14vh;
+                .inferior{
+                    align-items: start;
+                    .dos {
+                        margin-top: 15vh;
+                    }
+                    .cuatro {
+                        margin-bottom: 3vh;
+                    }
                 }
-            }
-            .inferior{
-                align-items: start;
-                .dos {
-                    margin-top: 15vh;
                 }
-                .cuatro {
-                    margin-bottom: 3vh;
-                }
-            }
             }
         }
 
-/* About me */
+/* Contact Me */
 
-    .aboutme-main {
-        .portrait {
-        width: 40vw;
+    body {
+        .contact-me-main {
+            .contact-form {
+                padding: 15px 0;
+                .form-inputs {
+                    width: 95%;
+                }
+                .form-textarea {
+                    padding: 0 10px;
+                    width: 95%;
+                }
+            }
         }
     }
 

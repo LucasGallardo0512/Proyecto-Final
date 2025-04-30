@@ -1,0 +1,41 @@
+/* Contact Me Styles */
+
+body {
+    height: 100dvh;
+    .contact-me-main {
+        @include column;
+        padding: 40px;
+        .title {
+            width: 70vw;
+            border-radius: 10px;
+            box-shadow: $bordershadow;
+        }
+        .contact-form {
+            width: 80vw;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            margin-top: 15px;
+            border-radius: 10px;
+            background-color: $bg-secundario;
+            box-shadow: $bordershadow;
+            @include column;
+            justify-content: space-between;
+            ::placeholder {
+            color: #777;
+            }
+            .form-inputs {
+                .form-inputs-text {
+                    padding: 0 10px;
+                }
+            }
+            .form-textarea {
+                width: 100%;
+                textarea {
+                line-height: normal;
+                resize: none;
+                }
+            }
+        }
+    }
+}

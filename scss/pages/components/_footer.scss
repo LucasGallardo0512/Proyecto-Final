@@ -1,42 +1,11 @@
-
-@import "../../abstracts/variables";
-@import "../../abstracts/mixin";
-
 /* Footer Styles */
 
 footer {
     background: linear-gradient(#aaa,#444);
-    padding: 15px 20px 25px 20px;
+    padding: 15px 20px;
     box-shadow: $bordershadow;
-    @include column;
     h2 {
-        margin: 0;
         text-align: center;
     }
-    .contact-form {
-        text-align: center;
-        padding: 10px;
-        margin: 0;
-        margin-top: 15px;
-        border-radius: 10px;
-        background-color: $bg-secundario;
-        box-shadow: $bordershadow;
-        @include column;
-        justify-content: space-between;
-        ::placeholder {
-        color: #777;
-        }
-        .form-inputs {
-            .form-inputs-text {
-                padding: 0 10px;
-            }
-        }
-        .form-textarea {
-            width: 100%;
-            textarea {
-            line-height: normal;
-            resize: none;
-            }
-        }
-    }
+
 }

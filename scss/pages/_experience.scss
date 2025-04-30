@@ -1,86 +1,83 @@
-
-@import "../abstracts/variables";
-@import "../abstracts/mixin";
-
-/* Home Styles */
-
-.main-experience {
-    padding: 30px 5vw;
-    @include column;
-    .temporal-line {
-        height: 110vh;
-        @include row;
-        .superior {
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;
-            height: 100%;
-            white-space: pretty;
-            .experience {
-                @include card;
-                flex-flow: row;
-                .vertical {
-                    display: flex;
-                    flex-flow: column;
-                    align-items: center;
-                    }
-                p {
-                    width: 40vw;
-                    font-size: .9em;
-                }
-                .experience-superior-name {
-                    font-size: 1.2em;
-                    font-weight: bold;
-                }
-                .line-exp {
-                    height: 5px;
-                    width: 30px;
-                    background-color: #000;
-                }
-            }
-        .tres {
-            margin-bottom: 20vh;
-        }
-        }
-        .inferior {
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;
-            height: 100%;
-            white-space: pretty;
-            .experience {
-                @include card;
-                flex-flow: row-reverse;
-                .vertical {
-                    display: flex;
-                    flex-flow: column;
-                    align-items: center;
+/* Experiences Styles */
+main {
+    .main-experience {
+        padding: 30px 5vw;
+        @include column;
+        .temporal-line {
+            height: 110vh;
+            @include row;
+            .superior {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                height: 100%;
+                white-space: pretty;
+                .experience {
+                    @include card;
+                    flex-flow: row;
+                    .vertical {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        }
                     p {
                         width: 40vw;
                         font-size: .9em;
                     }
-                    .experience-inferior-name {
+                    .experience-superior-name {
                         font-size: 1.2em;
                         font-weight: bold;
                     }
+                    .line-exp {
+                        height: 5px;
+                        width: 30px;
+                        background-color: #000;
+                    }
                 }
-                .line-exp {
-                    height: 5px;
-                    width: 30px;
-                    background-color: #000;
+            .tres {
+                margin-bottom: 20vh;
+            }
+            }
+            .inferior {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                height: 100%;
+                white-space: pretty;
+                .experience {
+                    @include card;
+                    flex-flow: row-reverse;
+                    .vertical {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        p {
+                            width: 40vw;
+                            font-size: .9em;
+                        }
+                        .experience-inferior-name {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                        }
+                    }
+                    .line-exp {
+                        height: 5px;
+                        width: 30px;
+                        background-color: #000;
+                    }
+                }
+                .dos {
+                    margin-top: 25vh;
                 }
             }
-            .dos {
-                margin-top: 25vh;
+            .line {
+                height: 100%;
+                width: 5px;
+                background-color: #000;
+            }
             }
         }
-        .line {
-            height: 100%;
-            width: 5px;
-            background-color: #000;
+        .punta-flecha {
+            display: none;
         }
-        }
-    }
-    .punta-flecha {
-        display: none;
-    }
+}
