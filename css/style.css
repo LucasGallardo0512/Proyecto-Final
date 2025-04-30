@@ -13,6 +13,7 @@ body {
   flex-flow: column;
   justify-content: space-between;
   height: auto;
+  overflow-x: hidden;
 }
 
 /* Header Styles */
