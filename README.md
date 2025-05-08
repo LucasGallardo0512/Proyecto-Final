@@ -1,1 +1,1 @@
-Migrado a SASS, completamente responsive, textos lorem e imágenes reemplazados.
+Espero cumpla con todo, desde ya muchas gracias por todo a ambos.
