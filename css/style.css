@@ -218,28 +218,28 @@ footer h2 {
 }
 
 /* Experiences Styles */
-main .main-experience {
+.main-experience {
   padding: 30px 5vw;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
 }
-main .main-experience .temporal-line {
+.main-experience .temporal-line {
   height: 110vh;
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
 }
-main .main-experience .temporal-line .superior {
+.main-experience .temporal-line .superior {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
   white-space: pretty;
 }
-main .main-experience .temporal-line .superior .experience {
+.main-experience .temporal-line .superior .experience {
   text-align: center;
   text-wrap: pretty;
   display: flex;
@@ -248,35 +248,35 @@ main .main-experience .temporal-line .superior .experience {
   justify-content: center;
   flex-flow: row;
 }
-main .main-experience .temporal-line .superior .experience .vertical {
+.main-experience .temporal-line .superior .experience .vertical {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-main .main-experience .temporal-line .superior .experience p {
+.main-experience .temporal-line .superior .experience p {
   width: 40vw;
   font-size: 0.9em;
 }
-main .main-experience .temporal-line .superior .experience .experience-superior-name {
+.main-experience .temporal-line .superior .experience .experience-superior-name {
   font-size: 1.2em;
   font-weight: bold;
 }
-main .main-experience .temporal-line .superior .experience .line-exp {
+.main-experience .temporal-line .superior .experience .line-exp {
   height: 5px;
   width: 30px;
   background-color: #000;
 }
-main .main-experience .temporal-line .superior .tres {
+.main-experience .temporal-line .superior .tres {
   margin-bottom: 20vh;
 }
-main .main-experience .temporal-line .inferior {
+.main-experience .temporal-line .inferior {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   height: 100%;
   white-space: pretty;
 }
-main .main-experience .temporal-line .inferior .experience {
+.main-experience .temporal-line .inferior .experience {
   text-align: center;
   text-wrap: pretty;
   display: flex;
@@ -285,33 +285,34 @@ main .main-experience .temporal-line .inferior .experience {
   justify-content: center;
   flex-flow: row-reverse;
 }
-main .main-experience .temporal-line .inferior .experience .vertical {
+.main-experience .temporal-line .inferior .experience .vertical {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-main .main-experience .temporal-line .inferior .experience .vertical p {
+.main-experience .temporal-line .inferior .experience .vertical p {
   width: 40vw;
   font-size: 0.9em;
 }
-main .main-experience .temporal-line .inferior .experience .vertical .experience-inferior-name {
+.main-experience .temporal-line .inferior .experience .vertical .experience-inferior-name {
   font-size: 1.2em;
   font-weight: bold;
 }
-main .main-experience .temporal-line .inferior .experience .line-exp {
+.main-experience .temporal-line .inferior .experience .line-exp {
   height: 5px;
   width: 30px;
   background-color: #000;
 }
-main .main-experience .temporal-line .inferior .dos {
+.main-experience .temporal-line .inferior .dos {
   margin-top: 25vh;
 }
-main .main-experience .temporal-line .line {
+.main-experience .temporal-line .line {
   height: 100%;
   width: 5px;
   background-color: #000;
 }
-main .punta-flecha {
+
+.punta-flecha {
   display: none;
 }
 
@@ -362,14 +363,14 @@ body .contact-me-main .contact-form .form-textarea textarea {
 
 /* MQ Tablets */
 @media screen and (min-width: 600px) {
-  body {
-    min-height: 100vh;
+  main {
+    height: auto;
   }
   /* Header */
   header {
     font-size: 1.5em;
   }
-  header .icon {
+  header a .icon {
     display: block;
     margin: 5px auto;
   }
@@ -435,9 +436,6 @@ body .contact-me-main .contact-form .form-textarea textarea {
     grid-column: span 2;
   }
   /* About me */
-  .aboutme-main {
-    height: auto;
-  }
   .aboutme-main .aboutme-section .portrait {
     width: 40vw;
   }
@@ -448,32 +446,32 @@ body .contact-me-main .contact-form .form-textarea textarea {
     margin-bottom: 7px;
   }
   /* Experiences */
-  main {
+  .main {
     height: 100%;
   }
-  main .main-experience {
-    margin-top: 5vh;
+  .main .main-experience {
+    margin-top: 9vh;
   }
-  main .main-experience .temporal-line {
+  .main .main-experience .temporal-line {
     height: 55vh;
   }
-  main .main-experience .temporal-line .superior {
+  .main .main-experience .temporal-line .superior {
     align-items: end;
   }
-  main .main-experience .temporal-line .superior .uno {
+  .main .main-experience .temporal-line .superior .uno {
     margin-top: 5vh;
     margin-bottom: 10vh;
   }
-  main .main-experience .temporal-line .superior .tres {
+  .main .main-experience .temporal-line .superior .tres {
     margin-bottom: 14vh;
   }
-  main .main-experience .temporal-line .inferior {
+  .main .main-experience .temporal-line .inferior {
     align-items: start;
   }
-  main .main-experience .temporal-line .inferior .dos {
+  .main .main-experience .temporal-line .inferior .dos {
     margin-top: 15vh;
   }
-  main .main-experience .temporal-line .inferior .cuatro {
+  .main .main-experience .temporal-line .inferior .cuatro {
     margin-bottom: 3vh;
   }
   /* Contact Me */
@@ -498,8 +496,9 @@ body .contact-me-main .contact-form .form-textarea textarea {
     justify-content: center;
     font-size: 1.5em;
   }
-  header .icon {
+  header a .icon {
     position: absolute;
+    top: 2px;
     left: 10px;
   }
   header nav {
@@ -538,26 +537,26 @@ body .contact-me-main .contact-form .form-textarea textarea {
     margin-left: 20px;
   }
   /* Projects */
-  main {
+  .main-projects {
     height: auto;
   }
-  main .main-projects {
+  .main-projects .main-projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  main .main-projects .project {
+  .main-projects .main-projects .project {
     width: 35vw;
     box-shadow: 0 0 20px #444;
   }
-  main .main-projects .project .project-img {
+  .main-projects .main-projects .project .project-img {
     height: 80%;
     border-radius: 20px 20px 0 0;
     border-bottom: #000 1px solid;
   }
-  main .main-projects .project .project-description {
+  .main-projects .main-projects .project .project-description {
     margin: auto;
     padding: 1em;
   }
-  main .main-projects :last-child {
+  .main-projects .main-projects :last-child {
     grid-column: span 2;
   }
   /* About me */
@@ -601,7 +600,10 @@ body .contact-me-main .contact-form .form-textarea textarea {
     margin-bottom: 2px;
   }
   /* Experience */
-  main .main-experience {
+  .main {
+    height: auto;
+  }
+  .main .main-experience {
     margin: 0;
     min-height: 80vh;
     padding: 30px 10vh;
@@ -610,14 +612,14 @@ body .contact-me-main .contact-form .form-textarea textarea {
     align-items: center;
     justify-content: center;
   }
-  main .main-experience .temporal-line {
+  .main .main-experience .temporal-line {
     height: auto;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
   }
-  main .main-experience .temporal-line .superior {
+  .main .main-experience .temporal-line .superior {
     width: 100%;
     display: flex;
     flex-flow: row;
@@ -626,35 +628,35 @@ body .contact-me-main .contact-form .form-textarea textarea {
     justify-content: space-between;
     align-items: end;
   }
-  main .main-experience .temporal-line .superior .experience {
+  .main .main-experience .temporal-line .superior .experience {
     flex-flow: column;
   }
-  main .main-experience .temporal-line .superior .experience .vertical p {
+  .main .main-experience .temporal-line .superior .experience .vertical p {
     width: 400px;
     font-size: 1em;
   }
-  main .main-experience .temporal-line .superior .experience .vertical .experience-superior-name {
+  .main .main-experience .temporal-line .superior .experience .vertical .experience-superior-name {
     margin-bottom: 10px;
     font-size: 1.5em;
   }
-  main .main-experience .temporal-line .superior .experience .line-exp {
+  .main .main-experience .temporal-line .superior .experience .line-exp {
     height: 30px;
     width: 5px;
   }
-  main .main-experience .temporal-line .superior .uno {
+  .main .main-experience .temporal-line .superior .uno {
     margin: 0;
   }
-  main .main-experience .temporal-line .superior .uno h2 {
+  .main .main-experience .temporal-line .superior .uno h2 {
     white-space: pre-wrap;
   }
-  main .main-experience .temporal-line .superior .tres {
+  .main .main-experience .temporal-line .superior .tres {
     margin: 0;
     margin-right: 15vw;
   }
-  main .main-experience .temporal-line .superior .tres h2 {
+  .main .main-experience .temporal-line .superior .tres h2 {
     white-space: pre-wrap;
   }
-  main .main-experience .temporal-line .inferior {
+  .main .main-experience .temporal-line .inferior {
     width: 100%;
     display: flex;
     flex-flow: row;
@@ -663,44 +665,44 @@ body .contact-me-main .contact-form .form-textarea textarea {
     justify-content: space-between;
     align-items: start;
   }
-  main .main-experience .temporal-line .inferior .experience {
+  .main .main-experience .temporal-line .inferior .experience {
     flex-flow: column-reverse;
   }
-  main .main-experience .temporal-line .inferior .experience .vertical {
+  .main .main-experience .temporal-line .inferior .experience .vertical {
     flex-flow: column-reverse;
   }
-  main .main-experience .temporal-line .inferior .experience .vertical p {
+  .main .main-experience .temporal-line .inferior .experience .vertical p {
     width: 400px;
     font-size: 1em;
   }
-  main .main-experience .temporal-line .inferior .experience .vertical .experience-inferior-name {
+  .main .main-experience .temporal-line .inferior .experience .vertical .experience-inferior-name {
     margin: 0;
     margin-top: 10px;
     font-size: 1.5em;
   }
-  main .main-experience .temporal-line .inferior .experience .line-exp {
+  .main .main-experience .temporal-line .inferior .experience .line-exp {
     height: 30px;
     width: 5px;
   }
-  main .main-experience .temporal-line .inferior .dos {
+  .main .main-experience .temporal-line .inferior .dos {
     margin: 0;
     margin-left: 15vw;
   }
-  main .main-experience .temporal-line .inferior .dos h2 {
+  .main .main-experience .temporal-line .inferior .dos h2 {
     white-space: pre-wrap;
   }
-  main .main-experience .temporal-line .inferior .cuatro {
+  .main .main-experience .temporal-line .inferior .cuatro {
     margin: 0;
     margin-left: 10vw;
   }
-  main .main-experience .temporal-line .inferior .cuatro h2 {
+  .main .main-experience .temporal-line .inferior .cuatro h2 {
     white-space: pre-wrap;
   }
-  main .main-experience .temporal-line .line {
+  .main .main-experience .temporal-line .line {
     height: 5px;
     width: 100%;
   }
-  main .punta-flecha {
+  .main .punta-flecha {
     display: block;
     height: 40px;
     width: 40px;

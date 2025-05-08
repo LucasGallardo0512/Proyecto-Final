@@ -1,18 +1,21 @@
 /* MQ Tablets */
 
 @media screen and (min-width: 600px) {
-    body {
-        min-height: 100vh;
+
+    main {
+        height: auto;
     }
 
 /* Header */
 
     header {
-        .icon {
+        font-size: 1.5em;
+        a {
+            .icon {
             display: block;
             margin: 5px auto;
+            }
         }
-        font-size: 1.5em;
         .navbar {
             display: none;
         }
@@ -63,20 +66,19 @@
 /* Projects */
 
     .main-projects {
-        grid-template-columns: repeat(2,1fr);
-        .project {
-            width: 40vw;
-            box-shadow: 0 0 20px #444;
+            grid-template-columns: repeat(2,1fr);
+            .project {
+                width: 40vw;
+                box-shadow: 0 0 20px #444;
+            }
+        :last-child {
+                grid-column: span 2;
+            }
         }
-    :last-child {
-            grid-column: span 2;
-        }
-    }
 
 /* About me */
 
     .aboutme-main {
-        height: auto;
         .aboutme-section {
             .portrait {
             width: 40vw;
@@ -94,10 +96,10 @@
 
 /* Experiences */
 
-    main {
+    .main {
         height: 100%;
         .main-experience {
-            margin-top: 5vh;
+            margin-top: 9vh;
             .temporal-line {
                 height: 55vh;
                 .superior {
@@ -119,9 +121,9 @@
                         margin-bottom: 3vh;
                     }
                 }
-                }
             }
         }
+    }
 
 /* Contact Me */
 

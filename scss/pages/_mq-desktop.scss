@@ -4,9 +4,12 @@
 
 @media screen and (min-width: 900px) {  
     header {
-        .icon {
-            position: absolute;
-            left: 10px
+        a {
+            .icon {
+                position: absolute;
+                top: 2px;
+                left: 10px
+            }
         }
         @include row;
         font-size: 1.5em;
@@ -58,7 +61,7 @@
 
 /* Projects */
 
-    main {
+    .main-projects {
         height: auto;
         .main-projects {
             grid-template-columns: repeat(2,1fr);
@@ -119,102 +122,103 @@
 
 /* Experience */
 
-    main {
-    .main-experience {
-        margin: 0;
-        min-height: 80vh;
-        padding: 30px 10vh;
-        @include row;
-        .temporal-line {
-            height: auto;
-            @include column;
-            .superior {
-                width: 100%;
-                @include row;
-                justify-content: space-between;
-                align-items: end;
-                .experience {
-                    flex-flow: column;
-                    .vertical{
-                        p {
-                            width: 400px;
-                            font-size: 1em;
+    .main {
+        height: auto;
+        .main-experience {
+            margin: 0;
+            min-height: 80vh;
+            padding: 30px 10vh;
+            @include row;
+            .temporal-line {
+                height: auto;
+                @include column;
+                .superior {
+                    width: 100%;
+                    @include row;
+                    justify-content: space-between;
+                    align-items: end;
+                    .experience {
+                        flex-flow: column;
+                        .vertical{
+                            p {
+                                width: 400px;
+                                font-size: 1em;
+                            }
+                            .experience-superior-name {
+                                margin-bottom: 10px;
+                                font-size: 1.5em;
+                            }
                         }
-                        .experience-superior-name {
-                            margin-bottom: 10px;
-                            font-size: 1.5em;
+                        .line-exp {
+                            height: 30px;
+                            width: 5px;
                         }
                     }
-                    .line-exp {
-                        height: 30px;
-                        width: 5px;
+                .uno {
+                    margin: 0;
+                    h2 {
+                        white-space: pre-wrap;
                     }
                 }
-            .uno {
-                margin: 0;
-                h2 {
-                    white-space: pre-wrap;
+                .tres {
+                    margin: 0;
+                    margin-right: 15vw;
+                    h2 {
+                        white-space: pre-wrap;
+                    }
                 }
-            }
-            .tres {
-                margin: 0;
-                margin-right: 15vw;
-                h2 {
-                    white-space: pre-wrap;
                 }
-            }
-            }
-            .inferior {
-                width: 100%;
-                @include row;
-                justify-content: space-between;
-                align-items: start;
-                .experience {
-                    flex-flow: column-reverse;
-                    .vertical{
+                .inferior {
+                    width: 100%;
+                    @include row;
+                    justify-content: space-between;
+                    align-items: start;
+                    .experience {
                         flex-flow: column-reverse;
-                        p {
-                            width: 400px;
-                            font-size: 1em;
+                        .vertical{
+                            flex-flow: column-reverse;
+                            p {
+                                width: 400px;
+                                font-size: 1em;
+                            }
+                            .experience-inferior-name {
+                                margin: 0;
+                                margin-top: 10px;
+                                font-size: 1.5em;
+                            }
                         }
-                        .experience-inferior-name {
-                            margin: 0;
-                            margin-top: 10px;
-                            font-size: 1.5em;
+                        .line-exp {
+                            height: 30px;
+                            width: 5px;
                         }
                     }
-                    .line-exp {
-                        height: 30px;
-                        width: 5px;
+                    .dos {
+                        margin: 0;
+                        margin-left: 15vw;
+                        h2 {
+                            white-space: pre-wrap;
+                        }
+                    }
+                    .cuatro {
+                        margin: 0;
+                        margin-left: 10vw;
+                        h2 {
+                            white-space: pre-wrap;
+                        }
                     }
                 }
-                .dos {
-                    margin: 0;
-                    margin-left: 15vw;
-                    h2 {
-                        white-space: pre-wrap;
-                    }
+                .line {
+                    height: 5px;
+                    width: 100%;
                 }
-                .cuatro {
-                    margin: 0;
-                    margin-left: 10vw;
-                    h2 {
-                        white-space: pre-wrap;
-                    }
                 }
             }
-            .line {
-                height: 5px;
-                width: 100%;
+            .punta-flecha {
+                display: block;
+                height: 40px;
+                width: 40px;
+                margin-left: -20px;
             }
-            }
-        }
-        .punta-flecha {
-            display: block;
-            height: 40px;
-            width: 40px;
-            margin-left: -20px;
-        }
     }
 
 /* Contact Me */
